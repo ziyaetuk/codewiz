@@ -20,5 +20,10 @@ class register:
     def GET(self):
         return render.Register()
 
+class PostRegistration:
+    def POST(self):
+        data =  web.input()
+        return data.username
+
 if __name__ == "__main__":
     app.run()
